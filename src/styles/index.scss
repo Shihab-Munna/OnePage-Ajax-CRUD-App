@@ -1,0 +1,29 @@
+html, body {
+    background: rgb(9, 169, 180);
+    color: #fff;
+    font-family: 'Righteous', cursive;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+
+}
+
+hr { display: block; height: 1px;
+    border: 0; border-top: 1px solid #ccc;
+    margin: 1em 0; padding: 0; }
+
+#addNew {
+    border: 2px solid white;
+}
+#tbody {
+    color : white;
+}
+
+#editContactModal {
+
+    color: black;
+    
+}

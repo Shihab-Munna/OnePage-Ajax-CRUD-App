@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Frineds Book</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="https://img.pngio.com/friends-icons-download-3480-free-png-and-vector-icons-unlimited-friend-png-free-512_512.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"> 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container py-5"> 
+        <h1 class="display-4"> Friend List With Contacts </h1>
+        <hr>
+        <div class="row my-4">
+            <div class="col">
+                <input type="text" placeholder="Enter Name" name="name" id="name" class="form-control">
+            </div>
+            <div class="col">
+                <input type="text" placeholder="Enter Phone" name="phone" id="phone" class="form-control">
+            </div>
+            <div class="col">
+                <input type="email" placeholder="Enter Email" name="email" id="email" class="form-control">
+            </div>
+            <div class="col">
+                <button type="button" id="addNew" class="btn btn-success">Add New</button>
+            </div>
+        </div>
+        <hr>
+        <table class="table" id="tbody">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Email</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Data From server will appere here -->
+            </tbody>
+          </table>
+    </div>
+
+
+    <div class="modal fade" id="editContactModal" tabindex="-1" role="dialog" aria-labelledby="editContactModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="editContactModalLabel">Edit Contact</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Name :</label>
+                <input type="text" class="form-control" id="edit-name">
+              </div>
+
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Phone :</label>
+                <input type="text" class="form-control" id="edit-phone">
+              </div>
+
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Email :</label>
+                <input type="email" class="form-control" id="edit-email">
+              </div>
+             
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" id="saveEditBtn"> Save Edit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
